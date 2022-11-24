@@ -1,0 +1,651 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Comforter+Brush&family=Ephesis&family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(/images/IMG_20220527_084304_313.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ 
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  background: #eb5e28;
+  box-shadow: 2 1.5rem 2.5rem rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+  position: sticky;
+  
+}
+.header .logo {
+  font-size: 5.5rem;
+  font-weight: bold;
+  color: black;
+  text-decoration-style: none;
+  font-family: "Ephesis", cursive;
+  
+}
+.header .navbars a {
+  font-size: 2rem;
+  margin: 1.2rem;
+  color: black;
+  text-decoration: none;
+}
+.header .navbars a:hover {
+  border-bottom: 4px solid black;
+}
+
+.header .icons div {
+
+ 
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 0.5rem;
+  background: #ccc5b9;
+  color: black;
+  font-size: 2rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+.header .icons div:hover {
+  background: #cb6f4b;
+  color: #252422;
+}
+.submenu {
+  position: relative;
+}
+.submenu:hover ul {
+  display: block;
+  position: absolute;
+}
+.submenu ul {
+  top: 50px;
+  left: 0;
+  display: none;
+  list-style-type: none;
+  cursor: none;
+  width: 18rem;
+  background-color: rgba(242, 124, 20, 0.742);
+  color: #000000;
+}
+a:visited {
+  color: #343434;
+  text-decoration: none;
+}
+a:link {
+  color: #343434;
+  text-decoration: none;
+}
+.heading {
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
+  color: black;
+}
+.navbars {
+  display: none;
+}
+.search { display: flex;}
+
+@media (min-width: 992px) {
+  #menu-btn {
+    display: none;
+  }
+  .navbars {
+    display: block;
+  }
+  body {
+    background-image: url(/images/What-Is-the-Future-of-Live-Music.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  .news {
+      width: 100%;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  flex-direction: row ;
+  flex-wrap:wrap ;
+  justify-content: center;
+    
+  }
+  .bowie img {
+    float: left;
+  }
+  .bowietwo img {
+    float: left;
+  }
+  .chart {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+  
+    
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbars {
+    display: none;
+  }
+  body {
+    background-image: url(/images/What-Is-the-Future-of-Live-Music.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  .news {
+    
+  width: 100%;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  flex-direction: row ;
+  flex-wrap:wrap ;
+  justify-content: center;
+  
+  
+}
+  }
+  .bowie img {
+    float: left;
+  }
+  .bowietwo img {
+    float: left;
+  }
+  .chart {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+.card-title {
+  color: #eb5e28;
+  font-family: "Permanent Marker", cursive;
+}
+
+.card-text {
+  color: rgb(222, 220, 220);
+}
+
+.card img:hover {
+  transform: scale(1.2);
+}
+
+
+.button{
+  font-size: 5rem;
+  background-color: #eb5e28;
+  border-radius: 8rem;
+  font-family: "Permanent Marker", cursive;
+  
+}
+.button:hover { color: #f5d3b2;
+ }
+
+.title h2 {
+  font-size: 12rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 2rem;
+  color: #eb5e28;
+}
+
+.title h3 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-left: 2rem;
+}
+
+.albumimg {
+  margin-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.albumimg:hover {
+  rotate: 360deg;
+  transition: 5s;
+}
+
+.albumimg img {
+  width: 42rem;border-radius: 50%;
+}
+
+.reserve {
+  margin-top: 8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reserve h4 {
+  text-transform: uppercase;
+  margin-top: 2rem;
+  padding: 2rem;
+  color: #ccc5b9;
+  background-color: #252422;
+  border-radius: 2.8rem;
+  cursor: pointer;
+  font-weight: 100;
+}
+
+.reserve h4::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f064";
+  font-weight: 1000;
+  margin-left: 1rem;
+  color: #b46000;
+}
+
+.reserve h4:hover {
+  color: #010101;
+  background-color: #eb5e28;
+  border: 2px solid black;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  background-color: #ddd8c2;
+  margin: 1.6rem;
+}
+
+.section_title {
+  padding: 2rem;
+}
+
+.article-music {
+  border: 2px rgb(60, 60, 60) solid;
+  margin-top: 5rem;
+  width: auto;
+  text-align: center;
+  background-color: #ccc5b973;
+  margin-left: 0.6;
+  height: auto;
+  
+}
+.news {
+  width: 100%;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  flex-wrap:wrap ;
+  justify-content: center;
+  
+  
+}
+.mann {  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+   
+}
+
+.mann-2 { display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  }
+  .mann-3 { display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    } 
+  .mann-3 img {padding: 1rem;}
+  .mann-2 img {padding: 1rem;}
+  .mann img {padding: 1rem;}
+
+.news h3 {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  font-size: 40px;
+  background-color: #eebfac;
+  padding: 2rem;
+  text-shadow: #f19225 0.2rem 0.5rem;
+}
+
+.bowie {
+  background-color: #cb6f4bfb;
+  margin: auto;
+  display: block;
+  width: 35rem;
+  box-shadow: 1rem 0.5rem rgba(61, 60, 60, 0.496);
+  margin-top: 5rem;
+  height: auto;
+    
+  
+  
+  
+}
+.bowie a img {
+  width: auto;
+  height: 20rem;
+  
+ 
+}
+.bowie a {
+  color: #eebfac;
+}
+.bowie p {
+  font-family: "Alkalami";
+  font-size: 2rem;
+  padding: 2rem;
+}
+.arctic {
+  
+ padding: 2rem;
+ text-align: center;
+ float: left;
+ justify-content: center;
+}
+.bowie:hover {
+  
+  transition: 1.2s;
+  transform: scale(1.3);
+}
+
+
+.bowie h4 {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  font-size: 3.5rem;
+  text-shadow: #f19225 0.2rem 0.5rem;
+}
+
+.banner-chart h2 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 10rem;
+  background-color: #eb5f2800;
+  text-shadow: #f19225 0.2rem 0.5rem;
+}
+
+
+.banner-chart h4 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 5rem;
+  background-color: #eb5f2800;
+  text-shadow: #f19225 0.2rem 0.5rem;
+}
+
+.music {
+  border: 2px rgb(60, 60, 60) solid;
+  margin-top: 5rem;
+  width: auto;
+  text-align: center;
+  background-color: #ccc5b973;
+  margin-left: 0.6;
+  height: auto;
+}
+
+.chart {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+}
+
+.contchart {
+  border: #403d39 4px solid;
+  background-color: #f56025f2;
+  height: 32.2rem;
+  width: 46rem;
+
+  margin: 1rem;
+  position: relative;
+  border-radius: 15%;
+}
+.contchart img {
+  width: 100%;
+  transition: all 0.5s;
+  height: 31.4rem;
+  border-radius: 14%;
+  
+}
+.magic h2 {
+  text-transform: uppercase;
+  margin: 0;
+  color: #111111;
+  font-size: 5rem;
+  text-shadow: #f19225 0.2rem 0.5rem;
+}
+
+.magic {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 0, 0, 0.299);
+  transition: 1s;
+  opacity: 0;
+  background-color: rgba(55, 45, 45, 0);
+  font-family: "Permanent Marker", cursive;
+  
+}
+
+.contchart:hover .magic {
+  opacity: 1;
+  background-color: #cb6f4b25;
+  
+}
+
+.contchart:hover img {
+  transform: scale(1.2) rotate(360deg) ;
+  transition: 1.2s;
+  
+}
+
+#container-form {
+  display: block;
+
+  width: 100%;
+  margin: 0 auto 0;
+  background-image: url(/images/misha_dribbble.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.content-block h2 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 3rem;color: #f56025f2;
+  
+}
+
+form {
+  text-align: left;
+  width: 300px;
+  margin: 20px auto 0;
+  font-family: "Permanent Marker", cursive;
+}
+
+form label {
+  display: block;
+  width: 300px;
+  padding: 6px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  background: rgba(34, 33, 33, 0.911);
+  color: rgb(246, 146, 31);
+  font-family: "Alkalami";
+  margin-top: 2rem;
+  border-radius: 15px;
+}
+
+form input {
+  display: block;
+  width: 300px;
+  padding: 5px;
+  margin: 0 0 10px;
+  border: none;
+  font-size: 22px;
+  font-family: "Alkalami" cursive;
+  font-style: italic;
+  background-color: #eb5f28e7;
+  border-radius: 15px;
+}
+
+form input[type="submit"] {
+  background: #333;
+  color: rgb(245, 99, 1);
+  cursor: pointer;
+  width: 300px;
+}
+
+footer h3 {font-size: 2rem;}
+footer { 
+    background-color: #403d39;
+    height: 15rem;
+    text-align: center;
+    padding-top: 1rem;color: #eb5e28;
+    
+}
+
+.icon-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.icon {
+    margin: 0 0.5rem 0 0.5rem;
+    font-size: 4rem;
+    background-color: #eb5e28;
+    border-radius: 50rem;
+    
+}
+
+.container-grid {
+  width: 60%;
+  margin: 2rem auto; 
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem; 
+  background-color: rgba(4, 4, 4, 0.628);
+  border: #252422 10px solid;
+  border-radius:5%;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+  border:#b46000 5px solid;
+  border-radius: 15%;
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  
+  
+
+  
+}
+
+
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+
+}
+
+.gallery__item--3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+
+ 
+}
+
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+
+  
+}
+
+.gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+
+}
+
+.gallery__item--6 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+.image-grid h2 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 8rem;
+  background-color: #eb5f2800;
+  text-shadow: #fe8c0a 0.2rem 0.5rem;
+}
+
+.image-grid {
+  margin-top :5rem; ;
+  padding: 2rem;
+  background-color: #fb642870;
+  border: #252422 2px solid;
+}
+
+.gallery__img:hover   {transform: scale(1.8);
+}
