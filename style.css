@@ -47,6 +47,9 @@ body {
   margin: 1.2rem;
   color: black;
   text-decoration: none;
+  font-family: "Permanent marker";
+  
+
 }
 .header .navbars a:hover {
   border-bottom: 4px solid black;
@@ -68,7 +71,7 @@ body {
 }
 .header .icons div:hover {
   background: #cb6f4b;
-  color: #252422;
+  color: #000000;
 }
 .submenu {
   position: relative;
@@ -76,16 +79,20 @@ body {
 .submenu:hover ul {
   display: block;
   position: absolute;
+  
 }
 .submenu ul {
+  border: #252422 5px solid;
   top: 50px;
-  left: 0;
+  right: 0;
   display: none;
   list-style-type: none;
   cursor: none;
   width: 18rem;
   background-color: rgba(242, 124, 20, 0.742);
-  color: #000000;
+  color: black;
+  font-family: "Permanent Marker" ;
+  
 }
 a:visited {
   color: #343434;
@@ -95,6 +102,7 @@ a:link {
   color: #343434;
   text-decoration: none;
 }
+
 .heading {
   text-align: center;
   padding: 2rem 0;
@@ -106,6 +114,13 @@ a:link {
   display: none;
 }
 .search { display: flex;}
+.icons a:hover{
+  border-bottom: 4px solid black;
+  color: #000000;
+}
+
+
+
 
 @media (min-width: 992px) {
   #menu-btn {
@@ -197,6 +212,8 @@ a:link {
 .card img:hover {
   transform: scale(1.2);
 }
+
+.card h5:hover {transform: scale(1.2);}
 
 
 .button{
@@ -309,6 +326,7 @@ a:link {
   flex-direction: column;
   align-items: center;
   
+  
    
 }
 
@@ -340,7 +358,7 @@ a:link {
   margin: auto;
   display: block;
   width: 35rem;
-  box-shadow: 1rem 0.5rem rgba(61, 60, 60, 0.496);
+  box-shadow: 1rem 0.5rem  rgba(61, 60, 60, 0.496);
   margin-top: 5rem;
   height: auto;
     
@@ -362,17 +380,11 @@ a:link {
   font-size: 2rem;
   padding: 2rem;
 }
-.arctic {
-  
- padding: 2rem;
- text-align: center;
- float: left;
- justify-content: center;
-}
+
 .bowie:hover {
   
-  transition: 1.2s;
-  transform: scale(1.3);
+  transition: 1s;
+  transform: scale(1.05);
 }
 
 
@@ -472,7 +484,7 @@ a:link {
 
 #container-form {
   display: block;
-
+background-color: #f1a518;
   width: 100%;
   margin: 0 auto 0;
   background-image: url(/images/misha_dribbble.gif);
@@ -490,10 +502,12 @@ a:link {
 }
 
 form {
+  
   text-align: left;
   width: 300px;
   margin: 20px auto 0;
   font-family: "Permanent Marker", cursive;
+  padding: 2rem;
 }
 
 form label {
@@ -532,8 +546,8 @@ form input[type="submit"] {
 
 footer h3 {font-size: 2rem;}
 footer { 
-    background-color: #403d39;
-    height: 15rem;
+    background-color: #403d3977;
+    height: 13rem;
     text-align: center;
     padding-top: 1rem;color: #eb5e28;
     
@@ -561,11 +575,11 @@ footer {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(8, 5vw);
   grid-gap: 1.5rem; 
   background-color: rgba(4, 4, 4, 0.628);
-  border: #252422 10px solid;
+  border: #252422 5px solid;
   border-radius:5%;
 }
 
@@ -574,15 +588,16 @@ footer {
   height: 100%;
   object-fit: cover;
   display: block; 
-  border:#b46000 5px solid;
+  border:#ff8800 4px solid;
   border-radius: 15%;
 }
 
 .gallery__item--1 {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 4;
+
   
   
 
@@ -593,14 +608,14 @@ footer {
 
 .gallery__item--2 {
   grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-end: 6;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 4;
 
 
 }
 
-.gallery__item--3 {
+.gallery__item--4 {
   grid-column-start: 5;
   grid-column-end: 9;
   grid-row-start: 1;
@@ -609,30 +624,42 @@ footer {
  
 }
 
-.gallery__item--4 {
+.gallery__item--3 {
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 6;
   grid-row-start: 3;
-  grid-row-end: 6;
+  grid-row-end: 7;
 
   
 }
 
 .gallery__item--5 {
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 6;
   grid-row-start: 6;
   grid-row-end: 9;
 
 }
 
 .gallery__item--6 {
-  grid-column-start: 5;
+  grid-column-start: 4;
   grid-column-end: 9;
-  grid-row-start: 6;
+  grid-row-start: 5;
   grid-row-end: 9;
 }
 
+.gallery__item--8 {
+   grid-column-start: 8;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.gallery__item--7 {grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 4;
+  grid-row-end: 9;
+ 
+}
 .image-grid h2 {
   font-family: "Permanent Marker", cursive;
   font-size: 8rem;
@@ -647,5 +674,10 @@ footer {
   border: #252422 2px solid;
 }
 
-.gallery__img:hover   {transform: scale(1.8);
+.gallery__img:hover   {transform: scale(1.2);box-shadow: #0c0c0c 0.4rem 0.2rem 0.4rem 0.4rem ;
 }
+
+
+
+footer li:hover { transform: scale(1.3);}
+.subtn:hover:hover {transform: scale(1.4);background-color: #fe8c0a;color: #252422; }
